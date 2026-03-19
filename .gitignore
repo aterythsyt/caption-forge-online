@@ -1,0 +1,10 @@
+backend/.venv/
+backend/.model-cache/
+backend/storage/
+backend/test_assets/
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+tmp/
+*.pyc
+__pycache__/
