@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: caption-forge-online
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: AGENT_ROUTER_BASE_URL
+        value: https://noobrouter.azurewebsites.net/v1
+      - key: AGENT_ROUTER_MODEL
+        value: gpt-5.2
+      - key: PROJECT_RETENTION_HOURS
+        value: "24"
+      - key: MAX_UPLOAD_SIZE_MB
+        value: "250"
+      - key: AGENT_ROUTER_TOKEN
+        sync: false
