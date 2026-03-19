@@ -1,0 +1,12 @@
+backend/.venv
+backend/storage
+backend/test_assets
+backend/__pycache__
+backend/**/*.pyc
+frontend/node_modules
+frontend/.next
+frontend/out
+test-media
+tmp
+.git
+.gitignore
